@@ -9,6 +9,45 @@ import './styles.css';
 const allTeams = Object.values(groups).flat();
 const groupOf = team => Object.keys(groups).find(g => groups[g].includes(team));
 const ordinal = n => n + (n === 1 ? 'st' : n === 2 ? 'nd' : n === 3 ? 'rd' : 'th');
+const userTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone || 'your local time';
+
+function matchInstant(match) {
+  if (match.utcDate) return new Date(match.utcDate);
+  if (match.dateTime) return new Date(match.dateTime);
+  return new Date((match.date || '').slice(0, 10) + 'T12:00:00Z');
+}
+
+function formatLocalDateTime(value) {
+  const date = value instanceof Date ? value : new Date(value);
+  if (Number.isNaN(date.getTime())) return 'Time to be confirmed';
+  return new Intl.DateTimeFormat(undefined, {
+    weekday: 'short',
+    day: 'numeric',
+    month: 'short',
+    year: 'numeric',
+    hour: 'numeric',
+    minute: '2-digit',
+    timeZoneName: 'short'
+  }).format(date);
+}
+
+function formatUpdated(value) {
+  const parsed = Date.parse(value);
+  if (Number.isNaN(parsed)) return value;
+  return formatLocalDateTime(new Date(parsed));
+}
+
+function countdownTo(date) {
+  const diff = date.getTime() - Date.now();
+  if (Number.isNaN(date.getTime())) return 'Kickoff time to be confirmed';
+  if (diff <= 0) return 'Kickoff time reached';
+  const days = Math.floor(diff / 86400000);
+  const hours = Math.floor((diff % 86400000) / 3600000);
+  const minutes = Math.floor((diff % 3600000) / 60000);
+  if (days > 0) return `Starts in ${days}d ${hours}h`;
+  if (hours > 0) return `Starts in ${hours}h ${minutes}m`;
+  return `Starts in ${minutes}m`;
+}
 
 function buildStandings() {
   const stats = Object.fromEntries(allTeams.map(team => [team, { team, played:0, won:0, drawn:0, lost:0, gf:0, ga:0, gd:0, points:0 }]));
@@ -34,7 +73,7 @@ function App() {
   const stats = useMemo(buildStandings, []);
   const rank = team => [...groups[groupOf(team)]].sort((a,b)=>stats[b].points-stats[a].points||stats[b].gd-stats[a].gd||stats[b].gf-stats[a].gf).indexOf(team)+1;
   const toggleFav = team => setFavourites(prev => { const next = prev.includes(team) ? prev.filter(t => t !== team) : [...prev, team]; localStorage.setItem('favourites', JSON.stringify(next)); return next; });
-  const teamMatches = fixtures.filter(m => m.home === selected || m.away === selected).filter(m => view === 'all' || (view === 'played' ? m.status === 'Complete' : m.status !== 'Complete'));
+  const teamMatches = fixtures.filter(m => m.home === selected || m.away === selected).filter(m => view === 'all' || (view === 'played' ? m.status === 'Complete' : m.status !== 'Complete')).sort((a,b)=>matchInstant(a)-matchInstant(b));
   const selectedStats = stats[selected];
 
   return <div className={dark ? 'app dark' : 'app'}>
@@ -45,8 +84,8 @@ function App() {
     <section className="liveBar">
       <span className={liveStatus.enabled ? 'dot live' : 'dot'}></span>
       <b>{liveStatus.enabled ? 'Live data connected' : 'Sample data'}</b>
-      <span>{liveStatus.lastUpdated}</span>
-      <small>{liveStatus.source}</small>
+      <span>Last updated: {formatUpdated(liveStatus.lastUpdated)}</span>
+      <small>{liveStatus.source} • Times shown in your local time ({userTimeZone})</small>
     </section>
     <section className="toolbar">
       <label className="search"><Search size={18}/><input value={query} onChange={e=>setQuery(e.target.value)} placeholder="Search a country..." /></label>
@@ -77,11 +116,13 @@ function App() {
 
 function Match({ match }) {
   const done = match.status === 'Complete';
+  const start = matchInstant(match);
   return <article className={done ? 'match complete' : 'match upcoming'}>
-    <small>{new Date(match.date+'T12:00:00').toLocaleDateString(undefined,{weekday:'short',day:'numeric',month:'short',year:'numeric'})} • {match.group}</small>
+    <small>{formatLocalDateTime(start)} • {match.group}</small>
+    {!done && <div className="countdown">⏳ {countdownTo(start)}</div>}
     <p><span>{flags[match.home]} {match.home}</span><b>{done ? match.homeScore : '—'}</b></p>
     <p><span>{flags[match.away]} {match.away}</span><b>{done ? match.awayScore : '—'}</b></p>
-    <em>{done ? 'Played' : 'Upcoming'}</em>
+    <em>{done ? 'Played' : 'Upcoming'} • Your local time</em>
   </article>;
 }
 
