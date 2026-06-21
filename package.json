@@ -1,0 +1,1 @@
+{"scripts":{"dev":"vite","build":"vite build","preview":"vite preview","update:data":"python scripts/update_data.py"},"dependencies":{"@vitejs/plugin-react":"latest","vite":"latest","react":"latest","react-dom":"latest","lucide-react":"latest"},"devDependencies":{}}
