@@ -475,7 +475,7 @@ export const fixtures = [
     "group": "Group H",
     "home": "Spain",
     "away": "Saudi Arabia",
-    "homeScore": 5,
+    "homeScore": 4,
     "awayScore": 0,
     "status": "Complete",
     "apiStatus": "FINISHED"
@@ -490,8 +490,8 @@ export const fixtures = [
     "away": "Iran",
     "homeScore": 0,
     "awayScore": 0,
-    "status": "Scheduled",
-    "apiStatus": "IN_PLAY"
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537372,
