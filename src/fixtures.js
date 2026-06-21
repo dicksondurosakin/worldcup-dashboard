@@ -2,721 +2,937 @@ export const fixtures = [
   {
     "id": 537327,
     "date": "2026-06-11",
+    "utcDate": "2026-06-11T19:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group A",
     "home": "Mexico",
     "away": "South Africa",
     "homeScore": 2,
     "awayScore": 0,
-    "status": "Complete"
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537328,
     "date": "2026-06-12",
+    "utcDate": "2026-06-12T02:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group A",
     "home": "South Korea",
     "away": "Czechia",
     "homeScore": 2,
     "awayScore": 1,
-    "status": "Complete"
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537333,
     "date": "2026-06-12",
+    "utcDate": "2026-06-12T19:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group B",
     "home": "Canada",
     "away": "Bosnia-Herzegovina",
     "homeScore": 1,
     "awayScore": 1,
-    "status": "Complete"
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537345,
     "date": "2026-06-13",
+    "utcDate": "2026-06-13T01:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group D",
     "home": "United States",
     "away": "Paraguay",
     "homeScore": 4,
     "awayScore": 1,
-    "status": "Complete"
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537334,
     "date": "2026-06-13",
+    "utcDate": "2026-06-13T19:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group B",
     "home": "Qatar",
     "away": "Switzerland",
     "homeScore": 1,
     "awayScore": 1,
-    "status": "Complete"
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537339,
     "date": "2026-06-13",
+    "utcDate": "2026-06-13T22:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group C",
     "home": "Brazil",
     "away": "Morocco",
     "homeScore": 1,
     "awayScore": 1,
-    "status": "Complete"
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537340,
     "date": "2026-06-14",
+    "utcDate": "2026-06-14T01:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group C",
     "home": "Haiti",
     "away": "Scotland",
     "homeScore": 0,
     "awayScore": 1,
-    "status": "Complete"
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537346,
     "date": "2026-06-14",
+    "utcDate": "2026-06-14T04:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group D",
     "home": "Australia",
     "away": "Turkey",
     "homeScore": 2,
     "awayScore": 0,
-    "status": "Complete"
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537351,
     "date": "2026-06-14",
+    "utcDate": "2026-06-14T17:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group E",
     "home": "Germany",
     "away": "Curacao",
     "homeScore": 7,
     "awayScore": 1,
-    "status": "Complete"
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537357,
     "date": "2026-06-14",
+    "utcDate": "2026-06-14T20:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group F",
     "home": "Netherlands",
     "away": "Japan",
     "homeScore": 2,
     "awayScore": 2,
-    "status": "Complete"
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537352,
     "date": "2026-06-14",
+    "utcDate": "2026-06-14T23:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group E",
     "home": "Ivory Coast",
     "away": "Ecuador",
     "homeScore": 1,
     "awayScore": 0,
-    "status": "Complete"
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537358,
     "date": "2026-06-15",
+    "utcDate": "2026-06-15T02:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group F",
     "home": "Sweden",
     "away": "Tunisia",
     "homeScore": 5,
     "awayScore": 1,
-    "status": "Complete"
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537369,
     "date": "2026-06-15",
+    "utcDate": "2026-06-15T16:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group H",
     "home": "Spain",
     "away": "Cape Verde",
     "homeScore": 0,
     "awayScore": 0,
-    "status": "Complete"
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537363,
     "date": "2026-06-15",
+    "utcDate": "2026-06-15T19:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group G",
     "home": "Belgium",
     "away": "Egypt",
     "homeScore": 1,
     "awayScore": 1,
-    "status": "Complete"
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537370,
     "date": "2026-06-15",
+    "utcDate": "2026-06-15T22:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group H",
     "home": "Saudi Arabia",
     "away": "Uruguay",
     "homeScore": 1,
     "awayScore": 1,
-    "status": "Complete"
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537364,
     "date": "2026-06-16",
+    "utcDate": "2026-06-16T01:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group G",
     "home": "Iran",
     "away": "New Zealand",
     "homeScore": 2,
     "awayScore": 2,
-    "status": "Complete"
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537391,
     "date": "2026-06-16",
+    "utcDate": "2026-06-16T19:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group I",
     "home": "France",
     "away": "Senegal",
     "homeScore": 3,
     "awayScore": 1,
-    "status": "Complete"
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537392,
     "date": "2026-06-16",
+    "utcDate": "2026-06-16T22:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group I",
     "home": "Iraq",
     "away": "Norway",
     "homeScore": 1,
     "awayScore": 4,
-    "status": "Complete"
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537397,
     "date": "2026-06-17",
+    "utcDate": "2026-06-17T01:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group J",
     "home": "Argentina",
     "away": "Algeria",
     "homeScore": 3,
     "awayScore": 0,
-    "status": "Complete"
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537398,
     "date": "2026-06-17",
+    "utcDate": "2026-06-17T04:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group J",
     "home": "Austria",
     "away": "Jordan",
     "homeScore": 3,
     "awayScore": 1,
-    "status": "Complete"
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537403,
     "date": "2026-06-17",
+    "utcDate": "2026-06-17T17:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group K",
     "home": "Portugal",
     "away": "DR Congo",
     "homeScore": 1,
     "awayScore": 1,
-    "status": "Complete"
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537409,
     "date": "2026-06-17",
+    "utcDate": "2026-06-17T20:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group L",
     "home": "England",
     "away": "Croatia",
     "homeScore": 4,
     "awayScore": 2,
-    "status": "Complete"
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537410,
     "date": "2026-06-17",
+    "utcDate": "2026-06-17T23:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group L",
     "home": "Ghana",
     "away": "Panama",
     "homeScore": 1,
     "awayScore": 0,
-    "status": "Complete"
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537404,
     "date": "2026-06-18",
+    "utcDate": "2026-06-18T02:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group K",
     "home": "Uzbekistan",
     "away": "Colombia",
     "homeScore": 1,
     "awayScore": 3,
-    "status": "Complete"
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537329,
     "date": "2026-06-18",
+    "utcDate": "2026-06-18T16:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group A",
     "home": "Czechia",
     "away": "South Africa",
     "homeScore": 1,
     "awayScore": 1,
-    "status": "Complete"
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537335,
     "date": "2026-06-18",
+    "utcDate": "2026-06-18T19:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group B",
     "home": "Switzerland",
     "away": "Bosnia-Herzegovina",
     "homeScore": 4,
     "awayScore": 1,
-    "status": "Complete"
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537336,
     "date": "2026-06-18",
+    "utcDate": "2026-06-18T22:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group B",
     "home": "Canada",
     "away": "Qatar",
     "homeScore": 6,
     "awayScore": 0,
-    "status": "Complete"
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537330,
     "date": "2026-06-19",
+    "utcDate": "2026-06-19T01:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group A",
     "home": "Mexico",
     "away": "South Korea",
     "homeScore": 1,
     "awayScore": 0,
-    "status": "Complete"
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537348,
     "date": "2026-06-19",
+    "utcDate": "2026-06-19T19:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group D",
     "home": "United States",
     "away": "Australia",
     "homeScore": 2,
     "awayScore": 0,
-    "status": "Complete"
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537342,
     "date": "2026-06-19",
+    "utcDate": "2026-06-19T22:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group C",
     "home": "Scotland",
     "away": "Morocco",
     "homeScore": 0,
     "awayScore": 1,
-    "status": "Complete"
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537341,
     "date": "2026-06-20",
+    "utcDate": "2026-06-20T00:30:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group C",
     "home": "Brazil",
     "away": "Haiti",
     "homeScore": 3,
     "awayScore": 0,
-    "status": "Complete"
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537347,
     "date": "2026-06-20",
+    "utcDate": "2026-06-20T03:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group D",
     "home": "Turkey",
     "away": "Paraguay",
     "homeScore": 0,
     "awayScore": 1,
-    "status": "Complete"
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537359,
     "date": "2026-06-20",
+    "utcDate": "2026-06-20T17:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group F",
     "home": "Netherlands",
     "away": "Sweden",
     "homeScore": 5,
     "awayScore": 1,
-    "status": "Complete"
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537353,
     "date": "2026-06-20",
+    "utcDate": "2026-06-20T20:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group E",
     "home": "Germany",
     "away": "Ivory Coast",
     "homeScore": 2,
     "awayScore": 1,
-    "status": "Complete"
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537354,
     "date": "2026-06-21",
+    "utcDate": "2026-06-21T00:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group E",
     "home": "Ecuador",
     "away": "Curacao",
     "homeScore": 0,
     "awayScore": 0,
-    "status": "Complete"
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537360,
     "date": "2026-06-21",
+    "utcDate": "2026-06-21T04:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group F",
     "home": "Tunisia",
     "away": "Japan",
     "homeScore": 0,
     "awayScore": 4,
-    "status": "Complete"
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537371,
     "date": "2026-06-21",
+    "utcDate": "2026-06-21T16:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group H",
     "home": "Spain",
     "away": "Saudi Arabia",
-    "homeScore": 3,
+    "homeScore": 4,
     "awayScore": 0,
-    "status": "Scheduled"
+    "status": "Scheduled",
+    "apiStatus": "IN_PLAY"
   },
   {
     "id": 537365,
     "date": "2026-06-21",
+    "utcDate": "2026-06-21T19:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group G",
     "home": "Belgium",
     "away": "Iran",
     "homeScore": null,
     "awayScore": null,
-    "status": "Scheduled"
+    "status": "Scheduled",
+    "apiStatus": "TIMED"
   },
   {
     "id": 537372,
     "date": "2026-06-21",
+    "utcDate": "2026-06-21T22:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group H",
     "home": "Uruguay",
     "away": "Cape Verde",
     "homeScore": null,
     "awayScore": null,
-    "status": "Scheduled"
+    "status": "Scheduled",
+    "apiStatus": "TIMED"
   },
   {
     "id": 537366,
     "date": "2026-06-22",
+    "utcDate": "2026-06-22T01:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group G",
     "home": "New Zealand",
     "away": "Egypt",
     "homeScore": null,
     "awayScore": null,
-    "status": "Scheduled"
+    "status": "Scheduled",
+    "apiStatus": "TIMED"
   },
   {
     "id": 537399,
     "date": "2026-06-22",
+    "utcDate": "2026-06-22T17:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group J",
     "home": "Argentina",
     "away": "Austria",
     "homeScore": null,
     "awayScore": null,
-    "status": "Scheduled"
+    "status": "Scheduled",
+    "apiStatus": "TIMED"
   },
   {
     "id": 537393,
     "date": "2026-06-22",
+    "utcDate": "2026-06-22T21:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group I",
     "home": "France",
     "away": "Iraq",
     "homeScore": null,
     "awayScore": null,
-    "status": "Scheduled"
+    "status": "Scheduled",
+    "apiStatus": "TIMED"
   },
   {
     "id": 537394,
     "date": "2026-06-23",
+    "utcDate": "2026-06-23T00:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group I",
     "home": "Norway",
     "away": "Senegal",
     "homeScore": null,
     "awayScore": null,
-    "status": "Scheduled"
+    "status": "Scheduled",
+    "apiStatus": "TIMED"
   },
   {
     "id": 537400,
     "date": "2026-06-23",
+    "utcDate": "2026-06-23T03:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group J",
     "home": "Jordan",
     "away": "Algeria",
     "homeScore": null,
     "awayScore": null,
-    "status": "Scheduled"
+    "status": "Scheduled",
+    "apiStatus": "TIMED"
   },
   {
     "id": 537405,
     "date": "2026-06-23",
+    "utcDate": "2026-06-23T17:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group K",
     "home": "Portugal",
     "away": "Uzbekistan",
     "homeScore": null,
     "awayScore": null,
-    "status": "Scheduled"
+    "status": "Scheduled",
+    "apiStatus": "TIMED"
   },
   {
     "id": 537411,
     "date": "2026-06-23",
+    "utcDate": "2026-06-23T20:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group L",
     "home": "England",
     "away": "Ghana",
     "homeScore": null,
     "awayScore": null,
-    "status": "Scheduled"
+    "status": "Scheduled",
+    "apiStatus": "TIMED"
   },
   {
     "id": 537412,
     "date": "2026-06-23",
+    "utcDate": "2026-06-23T23:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group L",
     "home": "Panama",
     "away": "Croatia",
     "homeScore": null,
     "awayScore": null,
-    "status": "Scheduled"
+    "status": "Scheduled",
+    "apiStatus": "TIMED"
   },
   {
     "id": 537406,
     "date": "2026-06-24",
+    "utcDate": "2026-06-24T02:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group K",
     "home": "Colombia",
     "away": "DR Congo",
     "homeScore": null,
     "awayScore": null,
-    "status": "Scheduled"
+    "status": "Scheduled",
+    "apiStatus": "TIMED"
   },
   {
     "id": 537337,
     "date": "2026-06-24",
+    "utcDate": "2026-06-24T19:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group B",
     "home": "Switzerland",
     "away": "Canada",
     "homeScore": null,
     "awayScore": null,
-    "status": "Scheduled"
+    "status": "Scheduled",
+    "apiStatus": "TIMED"
   },
   {
     "id": 537338,
     "date": "2026-06-24",
+    "utcDate": "2026-06-24T19:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group B",
     "home": "Bosnia-Herzegovina",
     "away": "Qatar",
     "homeScore": null,
     "awayScore": null,
-    "status": "Scheduled"
+    "status": "Scheduled",
+    "apiStatus": "TIMED"
   },
   {
     "id": 537344,
     "date": "2026-06-24",
+    "utcDate": "2026-06-24T22:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group C",
     "home": "Morocco",
     "away": "Haiti",
     "homeScore": null,
     "awayScore": null,
-    "status": "Scheduled"
+    "status": "Scheduled",
+    "apiStatus": "TIMED"
   },
   {
     "id": 537343,
     "date": "2026-06-24",
+    "utcDate": "2026-06-24T22:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group C",
     "home": "Scotland",
     "away": "Brazil",
     "homeScore": null,
     "awayScore": null,
-    "status": "Scheduled"
+    "status": "Scheduled",
+    "apiStatus": "TIMED"
   },
   {
     "id": 537331,
     "date": "2026-06-25",
+    "utcDate": "2026-06-25T01:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group A",
     "home": "Czechia",
     "away": "Mexico",
     "homeScore": null,
     "awayScore": null,
-    "status": "Scheduled"
+    "status": "Scheduled",
+    "apiStatus": "TIMED"
   },
   {
     "id": 537332,
     "date": "2026-06-25",
+    "utcDate": "2026-06-25T01:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group A",
     "home": "South Africa",
     "away": "South Korea",
     "homeScore": null,
     "awayScore": null,
-    "status": "Scheduled"
+    "status": "Scheduled",
+    "apiStatus": "TIMED"
   },
   {
     "id": 537355,
     "date": "2026-06-25",
+    "utcDate": "2026-06-25T20:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group E",
     "home": "Ecuador",
     "away": "Germany",
     "homeScore": null,
     "awayScore": null,
-    "status": "Scheduled"
+    "status": "Scheduled",
+    "apiStatus": "TIMED"
   },
   {
     "id": 537356,
     "date": "2026-06-25",
+    "utcDate": "2026-06-25T20:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group E",
     "home": "Curacao",
     "away": "Ivory Coast",
     "homeScore": null,
     "awayScore": null,
-    "status": "Scheduled"
+    "status": "Scheduled",
+    "apiStatus": "TIMED"
   },
   {
     "id": 537361,
     "date": "2026-06-25",
+    "utcDate": "2026-06-25T23:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group F",
     "home": "Tunisia",
     "away": "Netherlands",
     "homeScore": null,
     "awayScore": null,
-    "status": "Scheduled"
+    "status": "Scheduled",
+    "apiStatus": "TIMED"
   },
   {
     "id": 537362,
     "date": "2026-06-25",
+    "utcDate": "2026-06-25T23:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group F",
     "home": "Japan",
     "away": "Sweden",
     "homeScore": null,
     "awayScore": null,
-    "status": "Scheduled"
+    "status": "Scheduled",
+    "apiStatus": "TIMED"
   },
   {
     "id": 537349,
     "date": "2026-06-26",
+    "utcDate": "2026-06-26T02:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group D",
     "home": "Turkey",
     "away": "United States",
     "homeScore": null,
     "awayScore": null,
-    "status": "Scheduled"
+    "status": "Scheduled",
+    "apiStatus": "TIMED"
   },
   {
     "id": 537350,
     "date": "2026-06-26",
+    "utcDate": "2026-06-26T02:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group D",
     "home": "Paraguay",
     "away": "Australia",
     "homeScore": null,
     "awayScore": null,
-    "status": "Scheduled"
+    "status": "Scheduled",
+    "apiStatus": "TIMED"
   },
   {
     "id": 537395,
     "date": "2026-06-26",
+    "utcDate": "2026-06-26T19:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group I",
     "home": "Norway",
     "away": "France",
     "homeScore": null,
     "awayScore": null,
-    "status": "Scheduled"
+    "status": "Scheduled",
+    "apiStatus": "TIMED"
   },
   {
     "id": 537396,
     "date": "2026-06-26",
+    "utcDate": "2026-06-26T19:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group I",
     "home": "Senegal",
     "away": "Iraq",
     "homeScore": null,
     "awayScore": null,
-    "status": "Scheduled"
+    "status": "Scheduled",
+    "apiStatus": "TIMED"
   },
   {
     "id": 537373,
     "date": "2026-06-27",
+    "utcDate": "2026-06-27T00:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group H",
     "home": "Uruguay",
     "away": "Spain",
     "homeScore": null,
     "awayScore": null,
-    "status": "Scheduled"
+    "status": "Scheduled",
+    "apiStatus": "TIMED"
   },
   {
     "id": 537374,
     "date": "2026-06-27",
+    "utcDate": "2026-06-27T00:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group H",
     "home": "Cape Verde",
     "away": "Saudi Arabia",
     "homeScore": null,
     "awayScore": null,
-    "status": "Scheduled"
+    "status": "Scheduled",
+    "apiStatus": "TIMED"
   },
   {
     "id": 537367,
     "date": "2026-06-27",
+    "utcDate": "2026-06-27T03:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group G",
     "home": "New Zealand",
     "away": "Belgium",
     "homeScore": null,
     "awayScore": null,
-    "status": "Scheduled"
+    "status": "Scheduled",
+    "apiStatus": "TIMED"
   },
   {
     "id": 537368,
     "date": "2026-06-27",
+    "utcDate": "2026-06-27T03:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group G",
     "home": "Egypt",
     "away": "Iran",
     "homeScore": null,
     "awayScore": null,
-    "status": "Scheduled"
+    "status": "Scheduled",
+    "apiStatus": "TIMED"
   },
   {
     "id": 537413,
     "date": "2026-06-27",
+    "utcDate": "2026-06-27T21:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group L",
     "home": "Panama",
     "away": "England",
     "homeScore": null,
     "awayScore": null,
-    "status": "Scheduled"
+    "status": "Scheduled",
+    "apiStatus": "TIMED"
   },
   {
     "id": 537414,
     "date": "2026-06-27",
+    "utcDate": "2026-06-27T21:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group L",
     "home": "Croatia",
     "away": "Ghana",
     "homeScore": null,
     "awayScore": null,
-    "status": "Scheduled"
+    "status": "Scheduled",
+    "apiStatus": "TIMED"
   },
   {
     "id": 537407,
     "date": "2026-06-27",
+    "utcDate": "2026-06-27T23:30:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group K",
     "home": "Colombia",
     "away": "Portugal",
     "homeScore": null,
     "awayScore": null,
-    "status": "Scheduled"
+    "status": "Scheduled",
+    "apiStatus": "TIMED"
   },
   {
     "id": 537408,
     "date": "2026-06-27",
+    "utcDate": "2026-06-27T23:30:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group K",
     "home": "DR Congo",
     "away": "Uzbekistan",
     "homeScore": null,
     "awayScore": null,
-    "status": "Scheduled"
+    "status": "Scheduled",
+    "apiStatus": "TIMED"
   },
   {
     "id": 537401,
     "date": "2026-06-28",
+    "utcDate": "2026-06-28T02:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group J",
     "home": "Jordan",
     "away": "Argentina",
     "homeScore": null,
     "awayScore": null,
-    "status": "Scheduled"
+    "status": "Scheduled",
+    "apiStatus": "TIMED"
   },
   {
     "id": 537402,
     "date": "2026-06-28",
+    "utcDate": "2026-06-28T02:00:00Z",
+    "hasConfirmedKickoff": true,
     "group": "Group J",
     "home": "Algeria",
     "away": "Austria",
     "homeScore": null,
     "awayScore": null,
-    "status": "Scheduled"
+    "status": "Scheduled",
+    "apiStatus": "TIMED"
   }
 ];
