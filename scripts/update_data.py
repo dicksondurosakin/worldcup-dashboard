@@ -100,6 +100,7 @@ def convert(payload: dict) -> list[dict]:
     for idx, match in enumerate(payload.get('matches', [])):
         home = clean_team(match.get('homeTeam', {}).get('name') or '')
         away = clean_team(match.get('awayTeam', {}).get('name') or '')
+        utc_date = match.get('utcDate') or ''
         if not home or not away:
             continue
         score = match.get('score', {})
@@ -108,7 +109,8 @@ def convert(payload: dict) -> list[dict]:
         away_score = full_time.get('away')
         converted.append({
             'id': match.get('id', idx),
-            'date': (match.get('utcDate') or '')[:10],
+            'date': utc_date[:10],
+            'utcDate': utc_date,
             'group': group_label(home, away, match.get('group')),
             'home': home,
             'away': away,
@@ -125,7 +127,7 @@ def write_fixtures(fixtures: list[dict]) -> None:
 
 
 def write_status(enabled: bool, source: str, message: str) -> None:
-    now = datetime.now(timezone.utc).strftime('%d %b %Y, %H:%M UTC')
+    now = datetime.now(timezone.utc).isoformat()
     content = (
         'export const liveStatus = '\
         + json.dumps({
