@@ -1,6 +1,6 @@
 export const liveStatus = {
-  enabled: false,
-  source: 'Sample data',
-  lastUpdated: 'Not connected yet',
-  message: 'Using checked-in fixture data until the first successful API update.'
+  "enabled": true,
+  "source": "football-data.org",
+  "lastUpdated": "21 Jun 2026, 15:36 UTC",
+  "message": "Refreshed 72 matches from football-data.org."
 };
