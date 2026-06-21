@@ -50,9 +50,17 @@ GROUPS = {
     'L': ['England','Croatia','Ghana','Panama'],
 }
 
+PLACEHOLDER_UTC_TIMES = {'12:00:00Z', '12:00:00+00:00'}
+
 
 def clean_team(name: str) -> str:
     return ALIASES.get(name, name)
+
+
+def has_confirmed_kickoff(utc_date: str) -> bool:
+    if not utc_date or 'T' not in utc_date:
+        return False
+    return not any(utc_date.endswith(t) for t in PLACEHOLDER_UTC_TIMES)
 
 
 def group_label(home: str, away: str, api_group: str | None = None) -> str:
@@ -101,6 +109,7 @@ def convert(payload: dict) -> list[dict]:
         home = clean_team(match.get('homeTeam', {}).get('name') or '')
         away = clean_team(match.get('awayTeam', {}).get('name') or '')
         utc_date = match.get('utcDate') or ''
+        api_status = match.get('status', '')
         if not home or not away:
             continue
         score = match.get('score', {})
@@ -111,12 +120,14 @@ def convert(payload: dict) -> list[dict]:
             'id': match.get('id', idx),
             'date': utc_date[:10],
             'utcDate': utc_date,
+            'hasConfirmedKickoff': has_confirmed_kickoff(utc_date),
             'group': group_label(home, away, match.get('group')),
             'home': home,
             'away': away,
             'homeScore': home_score,
             'awayScore': away_score,
-            'status': status_label(match.get('status', '')),
+            'status': status_label(api_status),
+            'apiStatus': api_status,
         })
     return [m for m in converted if m['home'] and m['away'] and m['date']]
 
