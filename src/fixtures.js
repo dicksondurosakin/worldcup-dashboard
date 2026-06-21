@@ -365,8 +365,8 @@ export const fixtures = [
     "group": "Group H",
     "home": "Spain",
     "away": "Saudi Arabia",
-    "homeScore": null,
-    "awayScore": null,
+    "homeScore": 3,
+    "awayScore": 0,
     "status": "Scheduled"
   },
   {
