@@ -10,16 +10,36 @@ const allTeams = Object.values(groups).flat();
 const groupOf = team => Object.keys(groups).find(g => groups[g].includes(team));
 const ordinal = n => n + (n === 1 ? 'st' : n === 2 ? 'nd' : n === 3 ? 'rd' : 'th');
 const userTimeZone = Intl.DateTimeFormat().resolvedOptions().timeZone || 'your local time';
+const liveStatuses = new Set(['LIVE', 'IN_PLAY', 'PAUSED']);
+const knownPlaceholderTimes = new Set(['12:00:00Z', '12:00:00+00:00']);
+
+function hasConfirmedKickoff(match) {
+  if (!match.utcDate) return false;
+  const value = String(match.utcDate);
+  return !knownPlaceholderTimes.some(time => value.endsWith(time));
+}
 
 function matchInstant(match) {
-  if (match.utcDate) return new Date(match.utcDate);
+  if (match.utcDate && hasConfirmedKickoff(match)) return new Date(match.utcDate);
   if (match.dateTime) return new Date(match.dateTime);
   return new Date((match.date || '').slice(0, 10) + 'T12:00:00Z');
 }
 
-function formatLocalDateTime(value) {
-  const date = value instanceof Date ? value : new Date(value);
-  if (Number.isNaN(date.getTime())) return 'Time to be confirmed';
+function isToday(match) {
+  const d = matchInstant(match);
+  if (Number.isNaN(d.getTime())) return false;
+  const today = new Date();
+  return d.toDateString() === today.toDateString();
+}
+
+function formatLocalDateTime(match) {
+  if (!hasConfirmedKickoff(match)) {
+    const dateOnly = new Date((match.date || '').slice(0, 10) + 'T12:00:00Z');
+    if (Number.isNaN(dateOnly.getTime())) return 'Time to be confirmed';
+    const dateText = new Intl.DateTimeFormat(undefined, { weekday: 'short', day: 'numeric', month: 'short', year: 'numeric' }).format(dateOnly);
+    return `${dateText} • Time to be confirmed`;
+  }
+  const date = matchInstant(match);
   return new Intl.DateTimeFormat(undefined, {
     weekday: 'short',
     day: 'numeric',
@@ -34,10 +54,14 @@ function formatLocalDateTime(value) {
 function formatUpdated(value) {
   const parsed = Date.parse(value);
   if (Number.isNaN(parsed)) return value;
-  return formatLocalDateTime(new Date(parsed));
+  return new Intl.DateTimeFormat(undefined, {
+    weekday: 'short', day: 'numeric', month: 'short', year: 'numeric', hour: 'numeric', minute: '2-digit', timeZoneName: 'short'
+  }).format(new Date(parsed));
 }
 
-function countdownTo(date) {
+function countdownTo(match) {
+  if (!hasConfirmedKickoff(match)) return 'Kickoff time to be confirmed';
+  const date = matchInstant(match);
   const diff = date.getTime() - Date.now();
   if (Number.isNaN(date.getTime())) return 'Kickoff time to be confirmed';
   if (diff <= 0) return 'Kickoff time reached';
@@ -73,7 +97,11 @@ function App() {
   const stats = useMemo(buildStandings, []);
   const rank = team => [...groups[groupOf(team)]].sort((a,b)=>stats[b].points-stats[a].points||stats[b].gd-stats[a].gd||stats[b].gf-stats[a].gf).indexOf(team)+1;
   const toggleFav = team => setFavourites(prev => { const next = prev.includes(team) ? prev.filter(t => t !== team) : [...prev, team]; localStorage.setItem('favourites', JSON.stringify(next)); return next; });
-  const teamMatches = fixtures.filter(m => m.home === selected || m.away === selected).filter(m => view === 'all' || (view === 'played' ? m.status === 'Complete' : m.status !== 'Complete')).sort((a,b)=>matchInstant(a)-matchInstant(b));
+  const orderedFixtures = [...fixtures].sort((a,b)=>matchInstant(a)-matchInstant(b));
+  const liveMatches = orderedFixtures.filter(m => liveStatuses.has(m.apiStatus || m.status));
+  const todaysMatches = orderedFixtures.filter(m => isToday(m) && m.status !== 'Complete');
+  const upcomingMatches = orderedFixtures.filter(m => m.status !== 'Complete').slice(0, 6);
+  const teamMatches = orderedFixtures.filter(m => m.home === selected || m.away === selected).filter(m => view === 'all' || (view === 'played' ? m.status === 'Complete' : m.status !== 'Complete'));
   const selectedStats = stats[selected];
 
   return <div className={dark ? 'app dark' : 'app'}>
@@ -86,6 +114,11 @@ function App() {
       <b>{liveStatus.enabled ? 'Live data connected' : 'Sample data'}</b>
       <span>Last updated: {formatUpdated(liveStatus.lastUpdated)}</span>
       <small>{liveStatus.source} • Times shown in your local time ({userTimeZone})</small>
+    </section>
+    <section className="overview">
+      <MatchStrip title="🔴 Live Now" matches={liveMatches} empty="No match is live right now." />
+      <MatchStrip title="⏳ Today’s Matches" matches={todaysMatches} empty="No remaining matches today." />
+      <MatchStrip title="📅 Upcoming" matches={upcomingMatches} empty="No upcoming fixtures found." />
     </section>
     <section className="toolbar">
       <label className="search"><Search size={18}/><input value={query} onChange={e=>setQuery(e.target.value)} placeholder="Search a country..." /></label>
@@ -114,15 +147,28 @@ function App() {
   </div>;
 }
 
+function MatchStrip({ title, matches, empty }) {
+  return <article className="strip"><h2>{title}</h2>{matches.length ? <div className="stripGrid">{matches.map(match => <MiniMatch key={match.id} match={match}/>)}</div> : <p className="empty">{empty}</p>}</article>;
+}
+
+function MiniMatch({ match }) {
+  const live = liveStatuses.has(match.apiStatus || match.status);
+  return <div className={live ? 'miniMatch liveMini' : 'miniMatch'}>
+    <small>{formatLocalDateTime(match)}</small>
+    <b>{flags[match.home]} {match.home} {match.homeScore ?? '—'} - {match.awayScore ?? '—'} {flags[match.away]} {match.away}</b>
+    <span>{live ? 'Live now' : countdownTo(match)}</span>
+  </div>;
+}
+
 function Match({ match }) {
   const done = match.status === 'Complete';
-  const start = matchInstant(match);
-  return <article className={done ? 'match complete' : 'match upcoming'}>
-    <small>{formatLocalDateTime(start)} • {match.group}</small>
-    {!done && <div className="countdown">⏳ {countdownTo(start)}</div>}
-    <p><span>{flags[match.home]} {match.home}</span><b>{done ? match.homeScore : '—'}</b></p>
-    <p><span>{flags[match.away]} {match.away}</span><b>{done ? match.awayScore : '—'}</b></p>
-    <em>{done ? 'Played' : 'Upcoming'} • Your local time</em>
+  const live = liveStatuses.has(match.apiStatus || match.status);
+  return <article className={done ? 'match complete' : live ? 'match liveMatch' : 'match upcoming'}>
+    <small>{formatLocalDateTime(match)} • {match.group}</small>
+    {!done && <div className="countdown">{live ? '🔴 Live now' : `⏳ ${countdownTo(match)}`}</div>}
+    <p><span>{flags[match.home]} {match.home}</span><b>{done || live ? match.homeScore ?? '—' : '—'}</b></p>
+    <p><span>{flags[match.away]} {match.away}</span><b>{done || live ? match.awayScore ?? '—' : '—'}</b></p>
+    <em>{done ? 'Played' : live ? 'Live' : 'Upcoming'} • Your local time</em>
   </article>;
 }
 
