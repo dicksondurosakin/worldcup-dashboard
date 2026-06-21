@@ -489,7 +489,7 @@ export const fixtures = [
     "home": "Belgium",
     "away": "Iran",
     "homeScore": 0,
-    "awayScore": 1,
+    "awayScore": 0,
     "status": "Scheduled",
     "apiStatus": "IN_PLAY"
   },
