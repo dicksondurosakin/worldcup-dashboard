@@ -501,8 +501,8 @@ export const fixtures = [
     "group": "Group H",
     "home": "Uruguay",
     "away": "Cape Verde",
-    "homeScore": 0,
-    "awayScore": 0,
+    "homeScore": 2,
+    "awayScore": 1,
     "status": "Scheduled",
     "apiStatus": "IN_PLAY"
   },
