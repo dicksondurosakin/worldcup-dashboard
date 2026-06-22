@@ -527,10 +527,10 @@ export const fixtures = [
     "group": "Group J",
     "home": "Argentina",
     "away": "Austria",
-    "homeScore": 0,
+    "homeScore": 2,
     "awayScore": 0,
-    "status": "Scheduled",
-    "apiStatus": "IN_PLAY"
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537393,
