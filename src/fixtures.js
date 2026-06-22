@@ -515,9 +515,9 @@ export const fixtures = [
     "home": "New Zealand",
     "away": "Egypt",
     "homeScore": 1,
-    "awayScore": 0,
-    "status": "Scheduled",
-    "apiStatus": "IN_PLAY"
+    "awayScore": 3,
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537399,
