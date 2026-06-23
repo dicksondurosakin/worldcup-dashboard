@@ -605,10 +605,10 @@ export const fixtures = [
     "group": "Group L",
     "home": "Panama",
     "away": "Croatia",
-    "homeScore": null,
-    "awayScore": null,
+    "homeScore": 0,
+    "awayScore": 0,
     "status": "Scheduled",
-    "apiStatus": "TIMED"
+    "apiStatus": "LIVE"
   },
   {
     "id": 537406,
