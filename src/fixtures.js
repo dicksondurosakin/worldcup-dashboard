@@ -566,10 +566,10 @@ export const fixtures = [
     "group": "Group J",
     "home": "Jordan",
     "away": "Algeria",
-    "homeScore": 0,
-    "awayScore": 0,
-    "status": "Scheduled",
-    "apiStatus": "IN_PLAY"
+    "homeScore": 1,
+    "awayScore": 2,
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537405,
