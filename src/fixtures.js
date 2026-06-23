@@ -594,8 +594,8 @@ export const fixtures = [
     "away": "Ghana",
     "homeScore": 0,
     "awayScore": 0,
-    "status": "Scheduled",
-    "apiStatus": "LIVE"
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537412,
