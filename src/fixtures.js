@@ -542,8 +542,8 @@ export const fixtures = [
     "away": "Iraq",
     "homeScore": 3,
     "awayScore": 0,
-    "status": "Scheduled",
-    "apiStatus": "IN_PLAY"
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537394,
@@ -553,8 +553,8 @@ export const fixtures = [
     "group": "Group I",
     "home": "Norway",
     "away": "Senegal",
-    "homeScore": 0,
-    "awayScore": 0,
+    "homeScore": 3,
+    "awayScore": 1,
     "status": "Scheduled",
     "apiStatus": "IN_PLAY"
   },
