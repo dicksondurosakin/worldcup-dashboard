@@ -579,10 +579,10 @@ export const fixtures = [
     "group": "Group K",
     "home": "Portugal",
     "away": "Uzbekistan",
-    "homeScore": null,
-    "awayScore": null,
+    "homeScore": 2,
+    "awayScore": 1,
     "status": "Scheduled",
-    "apiStatus": "TIMED"
+    "apiStatus": "IN_PLAY"
   },
   {
     "id": 537411,
