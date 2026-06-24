@@ -631,7 +631,7 @@ export const fixtures = [
     "group": "Group B",
     "home": "Switzerland",
     "away": "Canada",
-    "homeScore": 0,
+    "homeScore": 2,
     "awayScore": 0,
     "status": "Scheduled",
     "apiStatus": "IN_PLAY"
@@ -644,8 +644,8 @@ export const fixtures = [
     "group": "Group B",
     "home": "Bosnia-Herzegovina",
     "away": "Qatar",
-    "homeScore": 0,
-    "awayScore": 0,
+    "homeScore": 2,
+    "awayScore": 1,
     "status": "Scheduled",
     "apiStatus": "IN_PLAY"
   },
