@@ -606,7 +606,7 @@ export const fixtures = [
     "home": "Panama",
     "away": "Croatia",
     "homeScore": 0,
-    "awayScore": 0,
+    "awayScore": 1,
     "status": "Scheduled",
     "apiStatus": "LIVE"
   },
