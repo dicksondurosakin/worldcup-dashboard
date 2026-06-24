@@ -618,10 +618,10 @@ export const fixtures = [
     "group": "Group K",
     "home": "Colombia",
     "away": "DR Congo",
-    "homeScore": 0,
+    "homeScore": 1,
     "awayScore": 0,
-    "status": "Scheduled",
-    "apiStatus": "PAUSED"
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537337,
