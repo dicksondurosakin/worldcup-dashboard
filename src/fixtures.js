@@ -607,8 +607,8 @@ export const fixtures = [
     "away": "Croatia",
     "homeScore": 0,
     "awayScore": 1,
-    "status": "Scheduled",
-    "apiStatus": "LIVE"
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537406,
