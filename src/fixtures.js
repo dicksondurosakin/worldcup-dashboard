@@ -632,9 +632,9 @@ export const fixtures = [
     "home": "Switzerland",
     "away": "Canada",
     "homeScore": 2,
-    "awayScore": 0,
-    "status": "Scheduled",
-    "apiStatus": "IN_PLAY"
+    "awayScore": 1,
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537338,
@@ -644,10 +644,10 @@ export const fixtures = [
     "group": "Group B",
     "home": "Bosnia-Herzegovina",
     "away": "Qatar",
-    "homeScore": 2,
+    "homeScore": 3,
     "awayScore": 1,
-    "status": "Scheduled",
-    "apiStatus": "IN_PLAY"
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537344,
