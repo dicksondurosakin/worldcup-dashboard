@@ -709,10 +709,10 @@ export const fixtures = [
     "group": "Group E",
     "home": "Ecuador",
     "away": "Germany",
-    "homeScore": 1,
+    "homeScore": 2,
     "awayScore": 1,
-    "status": "Scheduled",
-    "apiStatus": "IN_PLAY"
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537356,
@@ -724,8 +724,8 @@ export const fixtures = [
     "away": "Ivory Coast",
     "homeScore": 0,
     "awayScore": 2,
-    "status": "Scheduled",
-    "apiStatus": "IN_PLAY"
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537361,
