@@ -33,8 +33,8 @@ export const fixtures = [
     "group": "Group B",
     "home": "Canada",
     "away": "Bosnia-Herzegovina",
-    "homeScore": 1,
-    "awayScore": 1,
+    "homeScore": null,
+    "awayScore": null,
     "status": "Complete",
     "apiStatus": "FINISHED"
   },
@@ -709,10 +709,10 @@ export const fixtures = [
     "group": "Group E",
     "home": "Ecuador",
     "away": "Germany",
-    "homeScore": null,
-    "awayScore": null,
+    "homeScore": 1,
+    "awayScore": 1,
     "status": "Scheduled",
-    "apiStatus": "TIMED"
+    "apiStatus": "LIVE"
   },
   {
     "id": 537356,
@@ -722,10 +722,10 @@ export const fixtures = [
     "group": "Group E",
     "home": "Curacao",
     "away": "Ivory Coast",
-    "homeScore": null,
-    "awayScore": null,
+    "homeScore": 0,
+    "awayScore": 1,
     "status": "Scheduled",
-    "apiStatus": "TIMED"
+    "apiStatus": "LIVE"
   },
   {
     "id": 537361,
