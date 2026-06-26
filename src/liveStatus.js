@@ -1,6 +1,6 @@
 export const liveStatus = {
   "enabled": true,
   "source": "football-data.org",
-  "lastUpdated": "2026-06-26T20:35:57.109907+00:00",
+  "lastUpdated": "2026-06-26T21:30:55.680304+00:00",
   "message": "Refreshed 72 matches from football-data.org."
 };
