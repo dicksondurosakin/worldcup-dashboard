@@ -761,10 +761,10 @@ export const fixtures = [
     "group": "Group D",
     "home": "Turkey",
     "away": "United States",
-    "homeScore": 2,
-    "awayScore": 1,
-    "status": "Scheduled",
-    "apiStatus": "PAUSED"
+    "homeScore": 3,
+    "awayScore": 2,
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537350,
@@ -776,8 +776,8 @@ export const fixtures = [
     "away": "Australia",
     "homeScore": 0,
     "awayScore": 0,
-    "status": "Scheduled",
-    "apiStatus": "PAUSED"
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537395,
