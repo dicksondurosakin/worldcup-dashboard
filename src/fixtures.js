@@ -737,8 +737,8 @@ export const fixtures = [
     "away": "Netherlands",
     "homeScore": 1,
     "awayScore": 3,
-    "status": "Scheduled",
-    "apiStatus": "IN_PLAY"
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537362,
@@ -750,8 +750,8 @@ export const fixtures = [
     "away": "Sweden",
     "homeScore": 1,
     "awayScore": 1,
-    "status": "Scheduled",
-    "apiStatus": "IN_PLAY"
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537349,
