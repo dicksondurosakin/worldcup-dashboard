@@ -683,10 +683,10 @@ export const fixtures = [
     "group": "Group A",
     "home": "Czechia",
     "away": "Mexico",
-    "homeScore": 0,
-    "awayScore": 3,
-    "status": "Complete",
-    "apiStatus": "FINISHED"
+    "homeScore": null,
+    "awayScore": null,
+    "status": "Scheduled",
+    "apiStatus": "TIMED"
   },
   {
     "id": 537332,
@@ -696,10 +696,10 @@ export const fixtures = [
     "group": "Group A",
     "home": "South Africa",
     "away": "South Korea",
-    "homeScore": 1,
-    "awayScore": 0,
-    "status": "Complete",
-    "apiStatus": "FINISHED"
+    "homeScore": null,
+    "awayScore": null,
+    "status": "Scheduled",
+    "apiStatus": "TIMED"
   },
   {
     "id": 537355,
@@ -709,10 +709,10 @@ export const fixtures = [
     "group": "Group E",
     "home": "Ecuador",
     "away": "Germany",
-    "homeScore": 2,
-    "awayScore": 1,
-    "status": "Complete",
-    "apiStatus": "FINISHED"
+    "homeScore": null,
+    "awayScore": null,
+    "status": "Scheduled",
+    "apiStatus": "TIMED"
   },
   {
     "id": 537356,
@@ -722,10 +722,10 @@ export const fixtures = [
     "group": "Group E",
     "home": "Curacao",
     "away": "Ivory Coast",
-    "homeScore": 0,
-    "awayScore": 2,
-    "status": "Complete",
-    "apiStatus": "FINISHED"
+    "homeScore": null,
+    "awayScore": null,
+    "status": "Scheduled",
+    "apiStatus": "TIMED"
   },
   {
     "id": 537361,
@@ -735,10 +735,10 @@ export const fixtures = [
     "group": "Group F",
     "home": "Tunisia",
     "away": "Netherlands",
-    "homeScore": 1,
-    "awayScore": 3,
-    "status": "Complete",
-    "apiStatus": "FINISHED"
+    "homeScore": null,
+    "awayScore": null,
+    "status": "Scheduled",
+    "apiStatus": "TIMED"
   },
   {
     "id": 537362,
@@ -748,10 +748,10 @@ export const fixtures = [
     "group": "Group F",
     "home": "Japan",
     "away": "Sweden",
-    "homeScore": 1,
-    "awayScore": 1,
-    "status": "Complete",
-    "apiStatus": "FINISHED"
+    "homeScore": null,
+    "awayScore": null,
+    "status": "Scheduled",
+    "apiStatus": "TIMED"
   },
   {
     "id": 537349,
@@ -930,58 +930,6 @@ export const fixtures = [
     "group": "Group J",
     "home": "Algeria",
     "away": "Austria",
-    "homeScore": null,
-    "awayScore": null,
-    "status": "Scheduled",
-    "apiStatus": "TIMED"
-  },
-  {
-    "id": 537417,
-    "date": "2026-06-28",
-    "utcDate": "2026-06-28T19:00:00Z",
-    "hasConfirmedKickoff": true,
-    "group": "World Cup",
-    "home": "South Africa",
-    "away": "Canada",
-    "homeScore": null,
-    "awayScore": null,
-    "status": "Scheduled",
-    "apiStatus": "TIMED"
-  },
-  {
-    "id": 537423,
-    "date": "2026-06-29",
-    "utcDate": "2026-06-29T17:00:00Z",
-    "hasConfirmedKickoff": true,
-    "group": "World Cup",
-    "home": "Brazil",
-    "away": "Japan",
-    "homeScore": null,
-    "awayScore": null,
-    "status": "Scheduled",
-    "apiStatus": "TIMED"
-  },
-  {
-    "id": 537418,
-    "date": "2026-06-30",
-    "utcDate": "2026-06-30T01:00:00Z",
-    "hasConfirmedKickoff": true,
-    "group": "World Cup",
-    "home": "Netherlands",
-    "away": "Morocco",
-    "homeScore": null,
-    "awayScore": null,
-    "status": "Scheduled",
-    "apiStatus": "TIMED"
-  },
-  {
-    "id": 537421,
-    "date": "2026-07-02",
-    "utcDate": "2026-07-02T00:00:00Z",
-    "hasConfirmedKickoff": true,
-    "group": "World Cup",
-    "home": "United States",
-    "away": "Bosnia-Herzegovina",
     "homeScore": null,
     "awayScore": null,
     "status": "Scheduled",
