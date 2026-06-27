@@ -815,8 +815,8 @@ export const fixtures = [
     "away": "Spain",
     "homeScore": 0,
     "awayScore": 1,
-    "status": "Scheduled",
-    "apiStatus": "IN_PLAY"
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537374,
@@ -828,8 +828,8 @@ export const fixtures = [
     "away": "Saudi Arabia",
     "homeScore": 0,
     "awayScore": 0,
-    "status": "Scheduled",
-    "apiStatus": "IN_PLAY"
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537367,
@@ -839,10 +839,10 @@ export const fixtures = [
     "group": "Group G",
     "home": "New Zealand",
     "away": "Belgium",
-    "homeScore": null,
-    "awayScore": null,
+    "homeScore": 0,
+    "awayScore": 0,
     "status": "Scheduled",
-    "apiStatus": "TIMED"
+    "apiStatus": "LIVE"
   },
   {
     "id": 537368,
@@ -852,10 +852,10 @@ export const fixtures = [
     "group": "Group G",
     "home": "Egypt",
     "away": "Iran",
-    "homeScore": null,
-    "awayScore": null,
+    "homeScore": 0,
+    "awayScore": 0,
     "status": "Scheduled",
-    "apiStatus": "TIMED"
+    "apiStatus": "IN_PLAY"
   },
   {
     "id": 537413,
