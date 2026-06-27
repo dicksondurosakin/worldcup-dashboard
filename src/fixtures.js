@@ -814,9 +814,9 @@ export const fixtures = [
     "home": "Uruguay",
     "away": "Spain",
     "homeScore": 0,
-    "awayScore": 0,
+    "awayScore": 1,
     "status": "Scheduled",
-    "apiStatus": "LIVE"
+    "apiStatus": "IN_PLAY"
   },
   {
     "id": 537374,
@@ -829,7 +829,7 @@ export const fixtures = [
     "homeScore": 0,
     "awayScore": 0,
     "status": "Scheduled",
-    "apiStatus": "LIVE"
+    "apiStatus": "IN_PLAY"
   },
   {
     "id": 537367,
