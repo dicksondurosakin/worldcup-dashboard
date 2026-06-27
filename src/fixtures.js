@@ -839,10 +839,10 @@ export const fixtures = [
     "group": "Group G",
     "home": "New Zealand",
     "away": "Belgium",
-    "homeScore": 0,
-    "awayScore": 0,
-    "status": "Scheduled",
-    "apiStatus": "LIVE"
+    "homeScore": 1,
+    "awayScore": 5,
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537368,
@@ -852,10 +852,10 @@ export const fixtures = [
     "group": "Group G",
     "home": "Egypt",
     "away": "Iran",
-    "homeScore": 0,
-    "awayScore": 0,
-    "status": "Scheduled",
-    "apiStatus": "IN_PLAY"
+    "homeScore": 1,
+    "awayScore": 1,
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537413,
