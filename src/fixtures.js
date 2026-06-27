@@ -878,10 +878,10 @@ export const fixtures = [
     "group": "Group L",
     "home": "Croatia",
     "away": "Ghana",
-    "homeScore": 0,
+    "homeScore": 1,
     "awayScore": 0,
     "status": "Scheduled",
-    "apiStatus": "LIVE"
+    "apiStatus": "IN_PLAY"
   },
   {
     "id": 537407,
