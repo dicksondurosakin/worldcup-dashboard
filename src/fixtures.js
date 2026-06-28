@@ -944,9 +944,9 @@ export const fixtures = [
     "home": "South Africa",
     "away": "Canada",
     "homeScore": 0,
-    "awayScore": 0,
-    "status": "Scheduled",
-    "apiStatus": "IN_PLAY"
+    "awayScore": 1,
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537423,
