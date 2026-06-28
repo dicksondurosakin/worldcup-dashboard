@@ -917,10 +917,10 @@ export const fixtures = [
     "group": "Group J",
     "home": "Jordan",
     "away": "Argentina",
-    "homeScore": null,
-    "awayScore": null,
+    "homeScore": 0,
+    "awayScore": 2,
     "status": "Scheduled",
-    "apiStatus": "TIMED"
+    "apiStatus": "PAUSED"
   },
   {
     "id": 537402,
@@ -930,10 +930,10 @@ export const fixtures = [
     "group": "Group J",
     "home": "Algeria",
     "away": "Austria",
-    "homeScore": null,
-    "awayScore": null,
+    "homeScore": 1,
+    "awayScore": 1,
     "status": "Scheduled",
-    "apiStatus": "TIMED"
+    "apiStatus": "PAUSED"
   },
   {
     "id": 537417,
