@@ -917,10 +917,10 @@ export const fixtures = [
     "group": "Group J",
     "home": "Jordan",
     "away": "Argentina",
-    "homeScore": 0,
-    "awayScore": 2,
-    "status": "Scheduled",
-    "apiStatus": "PAUSED"
+    "homeScore": 1,
+    "awayScore": 3,
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537402,
@@ -930,10 +930,10 @@ export const fixtures = [
     "group": "Group J",
     "home": "Algeria",
     "away": "Austria",
-    "homeScore": 1,
-    "awayScore": 1,
-    "status": "Scheduled",
-    "apiStatus": "PAUSED"
+    "homeScore": 3,
+    "awayScore": 3,
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537417,
@@ -946,7 +946,7 @@ export const fixtures = [
     "homeScore": null,
     "awayScore": null,
     "status": "Scheduled",
-    "apiStatus": "TIMED"
+    "apiStatus": "2026-06-29 19:00:00Z"
   },
   {
     "id": 537423,
