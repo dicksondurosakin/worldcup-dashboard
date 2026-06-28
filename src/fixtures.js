@@ -787,10 +787,10 @@ export const fixtures = [
     "group": "Group I",
     "home": "Norway",
     "away": "France",
-    "homeScore": null,
-    "awayScore": null,
-    "status": "Scheduled",
-    "apiStatus": "TIMED"
+    "homeScore": 1,
+    "awayScore": 4,
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537396,
@@ -800,10 +800,10 @@ export const fixtures = [
     "group": "Group I",
     "home": "Senegal",
     "away": "Iraq",
-    "homeScore": null,
-    "awayScore": null,
-    "status": "Scheduled",
-    "apiStatus": "TIMED"
+    "homeScore": 5,
+    "awayScore": 0,
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537373,
@@ -853,7 +853,7 @@ export const fixtures = [
     "home": "Egypt",
     "away": "Iran",
     "homeScore": 1,
-    "awayScore": 2,
+    "awayScore": 1,
     "status": "Complete",
     "apiStatus": "FINISHED"
   },
@@ -893,8 +893,8 @@ export const fixtures = [
     "away": "Portugal",
     "homeScore": 0,
     "awayScore": 0,
-    "status": "Scheduled",
-    "apiStatus": "IN_PLAY"
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537408,
@@ -904,10 +904,10 @@ export const fixtures = [
     "group": "Group K",
     "home": "DR Congo",
     "away": "Uzbekistan",
-    "homeScore": 0,
+    "homeScore": 3,
     "awayScore": 1,
-    "status": "Scheduled",
-    "apiStatus": "IN_PLAY"
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537401,
