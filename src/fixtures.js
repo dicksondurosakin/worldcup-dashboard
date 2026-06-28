@@ -787,10 +787,10 @@ export const fixtures = [
     "group": "Group I",
     "home": "Norway",
     "away": "France",
-    "homeScore": 1,
-    "awayScore": 4,
-    "status": "Complete",
-    "apiStatus": "FINISHED"
+    "homeScore": null,
+    "awayScore": null,
+    "status": "Scheduled",
+    "apiStatus": "TIMED"
   },
   {
     "id": 537396,
@@ -800,10 +800,10 @@ export const fixtures = [
     "group": "Group I",
     "home": "Senegal",
     "away": "Iraq",
-    "homeScore": 5,
-    "awayScore": 0,
-    "status": "Complete",
-    "apiStatus": "FINISHED"
+    "homeScore": null,
+    "awayScore": null,
+    "status": "Scheduled",
+    "apiStatus": "TIMED"
   },
   {
     "id": 537373,
@@ -853,7 +853,7 @@ export const fixtures = [
     "home": "Egypt",
     "away": "Iran",
     "homeScore": 1,
-    "awayScore": 1,
+    "awayScore": 2,
     "status": "Complete",
     "apiStatus": "FINISHED"
   },
@@ -891,10 +891,10 @@ export const fixtures = [
     "group": "Group K",
     "home": "Colombia",
     "away": "Portugal",
-    "homeScore": null,
-    "awayScore": null,
+    "homeScore": 0,
+    "awayScore": 0,
     "status": "Scheduled",
-    "apiStatus": "TIMED"
+    "apiStatus": "IN_PLAY"
   },
   {
     "id": 537408,
@@ -904,10 +904,10 @@ export const fixtures = [
     "group": "Group K",
     "home": "DR Congo",
     "away": "Uzbekistan",
-    "homeScore": null,
-    "awayScore": null,
+    "homeScore": 0,
+    "awayScore": 1,
     "status": "Scheduled",
-    "apiStatus": "TIMED"
+    "apiStatus": "IN_PLAY"
   },
   {
     "id": 537401,
@@ -930,6 +930,58 @@ export const fixtures = [
     "group": "Group J",
     "home": "Algeria",
     "away": "Austria",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "Scheduled",
+    "apiStatus": "TIMED"
+  },
+  {
+    "id": 537417,
+    "date": "2026-06-28",
+    "utcDate": "2026-06-28T19:00:00Z",
+    "hasConfirmedKickoff": true,
+    "group": "World Cup",
+    "home": "South Africa",
+    "away": "Canada",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "Scheduled",
+    "apiStatus": "TIMED"
+  },
+  {
+    "id": 537423,
+    "date": "2026-06-29",
+    "utcDate": "2026-06-29T17:00:00Z",
+    "hasConfirmedKickoff": true,
+    "group": "World Cup",
+    "home": "Brazil",
+    "away": "Japan",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "Scheduled",
+    "apiStatus": "TIMED"
+  },
+  {
+    "id": 537418,
+    "date": "2026-06-30",
+    "utcDate": "2026-06-30T01:00:00Z",
+    "hasConfirmedKickoff": true,
+    "group": "World Cup",
+    "home": "Netherlands",
+    "away": "Morocco",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "Scheduled",
+    "apiStatus": "TIMED"
+  },
+  {
+    "id": 537421,
+    "date": "2026-07-02",
+    "utcDate": "2026-07-02T00:00:00Z",
+    "hasConfirmedKickoff": true,
+    "group": "World Cup",
+    "home": "United States",
+    "away": "Bosnia-Herzegovina",
     "homeScore": null,
     "awayScore": null,
     "status": "Scheduled",
