@@ -956,10 +956,10 @@ export const fixtures = [
     "group": "World Cup",
     "home": "Brazil",
     "away": "Japan",
-    "homeScore": null,
-    "awayScore": null,
+    "homeScore": 1,
+    "awayScore": 1,
     "status": "Scheduled",
-    "apiStatus": "TIMED"
+    "apiStatus": "IN_PLAY"
   },
   {
     "id": 537415,
