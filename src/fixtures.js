@@ -995,8 +995,8 @@ export const fixtures = [
     "group": "World Cup",
     "home": "Ivory Coast",
     "away": "Norway",
-    "homeScore": 0,
-    "awayScore": 0,
+    "homeScore": 1,
+    "awayScore": 1,
     "status": "Scheduled",
     "apiStatus": "IN_PLAY"
   },
