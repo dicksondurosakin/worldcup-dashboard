@@ -996,9 +996,9 @@ export const fixtures = [
     "home": "Ivory Coast",
     "away": "Norway",
     "homeScore": 1,
-    "awayScore": 1,
-    "status": "Scheduled",
-    "apiStatus": "IN_PLAY"
+    "awayScore": 2,
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537416,
