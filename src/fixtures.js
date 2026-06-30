@@ -982,10 +982,10 @@ export const fixtures = [
     "group": "World Cup",
     "home": "Netherlands",
     "away": "Morocco",
-    "homeScore": 1,
-    "awayScore": 1,
-    "status": "Scheduled",
-    "apiStatus": "PAUSED"
+    "homeScore": 4,
+    "awayScore": 4,
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537424,
