@@ -995,10 +995,10 @@ export const fixtures = [
     "group": "World Cup",
     "home": "Ivory Coast",
     "away": "Norway",
-    "homeScore": null,
-    "awayScore": null,
-    "status": "Scheduled",
-    "apiStatus": "TIMED"
+    "homeScore": 1,
+    "awayScore": 2,
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537416,
@@ -1008,10 +1008,10 @@ export const fixtures = [
     "group": "World Cup",
     "home": "France",
     "away": "Sweden",
-    "homeScore": 2,
+    "homeScore": 3,
     "awayScore": 0,
-    "status": "Scheduled",
-    "apiStatus": "IN_PLAY"
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537425,
