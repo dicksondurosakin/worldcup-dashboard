@@ -1023,8 +1023,8 @@ export const fixtures = [
     "away": "Ecuador",
     "homeScore": 2,
     "awayScore": 0,
-    "status": "Scheduled",
-    "apiStatus": "PAUSED"
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537426,
