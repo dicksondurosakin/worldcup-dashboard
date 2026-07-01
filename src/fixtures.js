@@ -1021,10 +1021,10 @@ export const fixtures = [
     "group": "World Cup",
     "home": "Mexico",
     "away": "Ecuador",
-    "homeScore": 0,
+    "homeScore": 2,
     "awayScore": 0,
     "status": "Scheduled",
-    "apiStatus": "IN_PLAY"
+    "apiStatus": "PAUSED"
   },
   {
     "id": 537426,
