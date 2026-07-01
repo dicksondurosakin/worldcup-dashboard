@@ -1047,10 +1047,10 @@ export const fixtures = [
     "group": "World Cup",
     "home": "Belgium",
     "away": "Senegal",
-    "homeScore": 2,
+    "homeScore": 3,
     "awayScore": 2,
-    "status": "Scheduled",
-    "apiStatus": "PAUSED"
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537421,
