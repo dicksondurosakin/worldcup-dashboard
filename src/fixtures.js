@@ -1037,7 +1037,7 @@ export const fixtures = [
     "homeScore": 0,
     "awayScore": 1,
     "status": "Scheduled",
-    "apiStatus": "LIVE"
+    "apiStatus": "IN_PLAY"
   },
   {
     "id": 537422,
