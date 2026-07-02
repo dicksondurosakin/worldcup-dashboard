@@ -1016,7 +1016,7 @@ export const fixtures = [
   {
     "id": 537425,
     "date": "2026-07-01",
-    "utcDate": "2026-07-01T01:00:00Z",
+    "utcDate": "2026-07-01T02:00:00Z",
     "hasConfirmedKickoff": true,
     "group": "World Cup",
     "home": "Mexico",
@@ -1060,10 +1060,10 @@ export const fixtures = [
     "group": "World Cup",
     "home": "United States",
     "away": "Bosnia-Herzegovina",
-    "homeScore": 1,
+    "homeScore": 2,
     "awayScore": 0,
-    "status": "Scheduled",
-    "apiStatus": "IN_PLAY"
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537420,
