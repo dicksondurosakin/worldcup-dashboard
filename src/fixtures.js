@@ -1060,7 +1060,7 @@ export const fixtures = [
     "group": "World Cup",
     "home": "United States",
     "away": "Bosnia-Herzegovina",
-    "homeScore": 0,
+    "homeScore": 1,
     "awayScore": 0,
     "status": "Scheduled",
     "apiStatus": "IN_PLAY"
