@@ -1181,5 +1181,31 @@ export const fixtures = [
     "awayScore": null,
     "status": "Scheduled",
     "apiStatus": "TIMED"
+  },
+  {
+    "id": 537378,
+    "date": "2026-07-06",
+    "utcDate": "2026-07-06T00:00:00Z",
+    "hasConfirmedKickoff": true,
+    "group": "World Cup",
+    "home": "Mexico",
+    "away": "England",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "Scheduled",
+    "apiStatus": "TIMED"
+  },
+  {
+    "id": 537380,
+    "date": "2026-07-07",
+    "utcDate": "2026-07-07T00:00:00Z",
+    "hasConfirmedKickoff": true,
+    "group": "World Cup",
+    "home": "United States",
+    "away": "Belgium",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "Scheduled",
+    "apiStatus": "TIMED"
   }
 ];
