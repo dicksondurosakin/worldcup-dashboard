@@ -1112,10 +1112,10 @@ export const fixtures = [
     "group": "World Cup",
     "home": "Australia",
     "away": "Egypt",
-    "homeScore": 0,
-    "awayScore": 1,
-    "status": "Scheduled",
-    "apiStatus": "IN_PLAY"
+    "homeScore": 3,
+    "awayScore": 5,
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537427,
