@@ -1099,10 +1099,10 @@ export const fixtures = [
     "group": "World Cup",
     "home": "Switzerland",
     "away": "Algeria",
-    "homeScore": null,
-    "awayScore": null,
-    "status": "Scheduled",
-    "apiStatus": "TIMED"
+    "homeScore": 2,
+    "awayScore": 0,
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537428,
