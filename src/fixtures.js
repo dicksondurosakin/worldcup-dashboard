@@ -1086,10 +1086,10 @@ export const fixtures = [
     "group": "World Cup",
     "home": "Portugal",
     "away": "Croatia",
-    "homeScore": null,
-    "awayScore": null,
-    "status": "Scheduled",
-    "apiStatus": "TIMED"
+    "homeScore": 2,
+    "awayScore": 1,
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537429,
