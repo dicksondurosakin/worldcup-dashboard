@@ -1196,6 +1196,19 @@ export const fixtures = [
     "apiStatus": "TIMED"
   },
   {
+    "id": 537379,
+    "date": "2026-07-06",
+    "utcDate": "2026-07-06T19:00:00Z",
+    "hasConfirmedKickoff": true,
+    "group": "World Cup",
+    "home": "Portugal",
+    "away": "Spain",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "Scheduled",
+    "apiStatus": "TIMED"
+  },
+  {
     "id": 537380,
     "date": "2026-07-07",
     "utcDate": "2026-07-07T00:00:00Z",
@@ -1203,6 +1216,32 @@ export const fixtures = [
     "group": "World Cup",
     "home": "United States",
     "away": "Belgium",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "Scheduled",
+    "apiStatus": "TIMED"
+  },
+  {
+    "id": 537381,
+    "date": "2026-07-07",
+    "utcDate": "2026-07-07T16:00:00Z",
+    "hasConfirmedKickoff": true,
+    "group": "World Cup",
+    "home": "Argentina",
+    "away": "Egypt",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "Scheduled",
+    "apiStatus": "TIMED"
+  },
+  {
+    "id": 537382,
+    "date": "2026-07-07",
+    "utcDate": "2026-07-07T20:00:00Z",
+    "hasConfirmedKickoff": true,
+    "group": "World Cup",
+    "home": "Switzerland",
+    "away": "Colombia",
     "homeScore": null,
     "awayScore": null,
     "status": "Scheduled",
