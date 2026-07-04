@@ -1125,10 +1125,10 @@ export const fixtures = [
     "group": "World Cup",
     "home": "Argentina",
     "away": "Cape Verde",
-    "homeScore": 2,
-    "awayScore": 1,
-    "status": "Scheduled",
-    "apiStatus": "IN_PLAY"
+    "homeScore": 3,
+    "awayScore": 2,
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537430,
@@ -1138,10 +1138,10 @@ export const fixtures = [
     "group": "World Cup",
     "home": "Colombia",
     "away": "Ghana",
-    "homeScore": null,
-    "awayScore": null,
-    "status": "Scheduled",
-    "apiStatus": "TIMED"
+    "homeScore": 1,
+    "awayScore": 0,
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537376,
