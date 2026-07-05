@@ -1246,5 +1246,18 @@ export const fixtures = [
     "awayScore": null,
     "status": "Scheduled",
     "apiStatus": "TIMED"
+  },
+  {
+    "id": 537383,
+    "date": "2026-07-09",
+    "utcDate": "2026-07-09T20:00:00Z",
+    "hasConfirmedKickoff": true,
+    "group": "World Cup",
+    "home": "France",
+    "away": "Morocco",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "Scheduled",
+    "apiStatus": "TIMED"
   }
 ];
