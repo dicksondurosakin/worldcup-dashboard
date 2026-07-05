@@ -1178,9 +1178,9 @@ export const fixtures = [
     "home": "Brazil",
     "away": "Norway",
     "homeScore": 0,
-    "awayScore": 0,
+    "awayScore": 2,
     "status": "Scheduled",
-    "apiStatus": "IN_PLAY"
+    "apiStatus": "LIVE"
   },
   {
     "id": 537378,
