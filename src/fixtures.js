@@ -1190,10 +1190,10 @@ export const fixtures = [
     "group": "World Cup",
     "home": "Mexico",
     "away": "England",
-    "homeScore": null,
-    "awayScore": null,
-    "status": "Scheduled",
-    "apiStatus": "2026-07-06 01:00:00Z"
+    "homeScore": 2,
+    "awayScore": 3,
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537379,
