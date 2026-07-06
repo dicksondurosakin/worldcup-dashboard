@@ -1177,15 +1177,15 @@ export const fixtures = [
     "group": "World Cup",
     "home": "Brazil",
     "away": "Norway",
-    "homeScore": 0,
+    "homeScore": 1,
     "awayScore": 2,
-    "status": "Scheduled",
-    "apiStatus": "LIVE"
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537378,
     "date": "2026-07-06",
-    "utcDate": "2026-07-06T00:00:00Z",
+    "utcDate": "2026-07-06T01:00:00Z",
     "hasConfirmedKickoff": true,
     "group": "World Cup",
     "home": "Mexico",
@@ -1193,7 +1193,7 @@ export const fixtures = [
     "homeScore": null,
     "awayScore": null,
     "status": "Scheduled",
-    "apiStatus": "TIMED"
+    "apiStatus": "2026-07-06 01:00:00Z"
   },
   {
     "id": 537379,
