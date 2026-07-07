@@ -1216,10 +1216,10 @@ export const fixtures = [
     "group": "World Cup",
     "home": "United States",
     "away": "Belgium",
-    "homeScore": null,
-    "awayScore": null,
-    "status": "Scheduled",
-    "apiStatus": "TIMED"
+    "homeScore": 1,
+    "awayScore": 4,
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537381,
