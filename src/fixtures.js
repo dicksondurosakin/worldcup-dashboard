@@ -1245,7 +1245,7 @@ export const fixtures = [
     "homeScore": 0,
     "awayScore": 0,
     "status": "Scheduled",
-    "apiStatus": "PAUSED"
+    "apiStatus": "LIVE"
   },
   {
     "id": 537383,
