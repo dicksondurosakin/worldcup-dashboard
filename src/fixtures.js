@@ -1261,6 +1261,19 @@ export const fixtures = [
     "apiStatus": "TIMED"
   },
   {
+    "id": 537384,
+    "date": "2026-07-10",
+    "utcDate": "2026-07-10T19:00:00Z",
+    "hasConfirmedKickoff": true,
+    "group": "World Cup",
+    "home": "Spain",
+    "away": "Belgium",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "Scheduled",
+    "apiStatus": "TIMED"
+  },
+  {
     "id": 537385,
     "date": "2026-07-11",
     "utcDate": "2026-07-11T21:00:00Z",
