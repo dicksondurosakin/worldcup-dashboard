@@ -1285,5 +1285,18 @@ export const fixtures = [
     "awayScore": null,
     "status": "Scheduled",
     "apiStatus": "TIMED"
+  },
+  {
+    "id": 537386,
+    "date": "2026-07-12",
+    "utcDate": "2026-07-12T01:00:00Z",
+    "hasConfirmedKickoff": true,
+    "group": "World Cup",
+    "home": "Argentina",
+    "away": "Switzerland",
+    "homeScore": null,
+    "awayScore": null,
+    "status": "Scheduled",
+    "apiStatus": "TIMED"
   }
 ];
