@@ -1192,8 +1192,8 @@ export const fixtures = [
     "away": "England",
     "homeScore": 2,
     "awayScore": 3,
-    "status": "Complete",
-    "apiStatus": "FINISHED"
+    "status": "Scheduled",
+    "apiStatus": "2026-07-06 01:00:00Z"
   },
   {
     "id": 537379,
@@ -1281,10 +1281,10 @@ export const fixtures = [
     "group": "World Cup",
     "home": "Norway",
     "away": "England",
-    "homeScore": null,
-    "awayScore": null,
+    "homeScore": 1,
+    "awayScore": 0,
     "status": "Scheduled",
-    "apiStatus": "TIMED"
+    "apiStatus": "IN_PLAY"
   },
   {
     "id": 537386,
