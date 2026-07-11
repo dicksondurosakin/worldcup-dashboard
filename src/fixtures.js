@@ -1281,10 +1281,10 @@ export const fixtures = [
     "group": "World Cup",
     "home": "Norway",
     "away": "England",
-    "homeScore": 2,
-    "awayScore": 1,
+    "homeScore": 1,
+    "awayScore": 2,
     "status": "Scheduled",
-    "apiStatus": "IN_PLAY"
+    "apiStatus": "PAUSED"
   },
   {
     "id": 537386,
