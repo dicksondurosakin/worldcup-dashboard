@@ -1309,8 +1309,8 @@ export const fixtures = [
     "away": "Spain",
     "homeScore": 0,
     "awayScore": 2,
-    "status": "Scheduled",
-    "apiStatus": "IN_PLAY"
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   },
   {
     "id": 537388,
