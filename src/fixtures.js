@@ -1333,8 +1333,8 @@ export const fixtures = [
     "group": "World Cup",
     "home": "France",
     "away": "England",
-    "homeScore": 0,
-    "awayScore": 3,
+    "homeScore": 3,
+    "awayScore": 4,
     "status": "Scheduled",
     "apiStatus": "IN_PLAY"
   },
