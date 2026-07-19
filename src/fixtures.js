@@ -1348,7 +1348,7 @@ export const fixtures = [
     "away": "Argentina",
     "homeScore": 1,
     "awayScore": 0,
-    "status": "Scheduled",
-    "apiStatus": "LIVE"
+    "status": "Complete",
+    "apiStatus": "FINISHED"
   }
 ];
