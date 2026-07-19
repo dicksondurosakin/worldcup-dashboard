@@ -1346,9 +1346,9 @@ export const fixtures = [
     "group": "World Cup",
     "home": "Spain",
     "away": "Argentina",
-    "homeScore": 0,
+    "homeScore": 1,
     "awayScore": 0,
     "status": "Scheduled",
-    "apiStatus": "IN_PLAY"
+    "apiStatus": "LIVE"
   }
 ];
